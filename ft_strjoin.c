@@ -6,11 +6,18 @@
 /*   By: andefern <andefern@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/18 14:15:55 by andefern          #+#    #+#             */
-/*   Updated: 2023/06/06 15:54:18 by andefern         ###   ########.fr       */
+/*   Updated: 2023/06/06 17:44:28 by andefern         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+/**
+ * @brief junta dos strings en 1 reservando memoria
+ * 
+ * @param s1 primer string ara concatenar
+ * @param s2 segundo string
+ * @return char* la concatenación de ambos
+ */
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {

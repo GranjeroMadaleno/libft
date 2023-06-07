@@ -6,11 +6,18 @@
 /*   By: andefern <andefern@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/16 13:17:47 by andefern          #+#    #+#             */
-/*   Updated: 2023/06/06 15:55:13 by andefern         ###   ########.fr       */
+/*   Updated: 2023/06/07 13:05:19 by andefern         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+/**
+ * @brief compara los caracteres del string y los de set
+ * 
+ * @param c el caracter del string que va a compararse
+ * @param set el string recibido
+ * @return size_t devuelve 1 si coincide
+ */
 
 static size_t	ft_compare(char const c, char const *set)
 {
@@ -25,6 +32,13 @@ static size_t	ft_compare(char const c, char const *set)
 	}
 	return (0);
 }
+/**
+ * @brief compara desde el principio al final el string con set
+ * 
+ * @param s1 string principal
+ * @param set string recibido
+ * @return size_t posición del caracter que coincide
+ */
 
 static size_t	ft_start(char const *s1, char const *set)
 {
@@ -39,6 +53,13 @@ static size_t	ft_start(char const *s1, char const *set)
 	}
 	return (i);
 }
+/**
+ * @brief compara desde el final al principio el string con set
+ * 
+ * @param s1 string principal
+ * @param set string recibido
+ * @return size_t devuelve el caracter encontrado
+ */
 
 static size_t	ft_end(char const *s1, char const *set)
 {
@@ -55,6 +76,14 @@ static size_t	ft_end(char const *s1, char const *set)
 	}
 	return (len);
 }
+/**
+ * @brief el programa elimina los caracteres que coinciden con set,
+ * desde ambos lados de string
+ * 
+ * @param s1 string principal
+ * @param set string recibido
+ * @return char* el substring sin los caracteres que coinciden
+ */
 
 char	*ft_strtrim(char const *s1, char const *set)
 {

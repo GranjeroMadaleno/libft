@@ -4,6 +4,8 @@ NAME = libft.a
 # FLAGS DE COMPILACION #
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror #-g3 -fsanitize=address
+AR = ar rc
+RM = /bin/rm -rf
 
 # ARCHIVOS #
 SRC =	ft_bzero.c \
@@ -101,11 +103,11 @@ export BONUS
 all: $(NAME)
 
 $(NAME): $(OBJ) $(INCLUDE)
-	ar rc $(NAME) $(OBJ)
+	$(AR) $(NAME) $(OBJ)
 	echo "$$LIBFT"
 
-bonus: $(OBJ) $(OBJ_BONUS) $(INCLUDE)
-	ar rc $(NAME) $(OBJ) $(OBJ_BONUS)
+bonus: $(OBJ_BONUS) $(OBJ) $(INCLUDE)
+	$(AR) $(NAME) $(OBJ_BONUS) $(OBJ)
 	echo "$$BONUS"
 
 $(OBJ): $(SRC)
@@ -114,11 +116,14 @@ $(OBJ): $(SRC)
 $(OBJ_BONUS): $(SRC_BONUS)
 	$(CC) $(CFLAGS) -c $(SRC_BONUS)
 
-
 clean:
-	rm -r *.o
+	$(RM) $(OBJ) $(OBJ_BONUS)
+	echo "objs deleted"
 
 fclean: clean
-	rm -r $(NAME)
+	$(RM) $(NAME)
+	echo "executable deleted"
 
 re: fclean all
+
+.PHONY: all clean fclean re bonus

@@ -6,11 +6,18 @@
 /*   By: andefern <andefern@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/23 12:28:11 by andefern          #+#    #+#             */
-/*   Updated: 2023/06/06 15:54:58 by andefern         ###   ########.fr       */
+/*   Updated: 2023/06/06 18:09:00 by andefern         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+/**
+ * @brief aplica la función f a cada caracter del string
+ * 
+ * @param s el string principal
+ * @param f la función a aplicar
+ * @return char* el string final
+ */
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {

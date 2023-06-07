@@ -6,11 +6,17 @@
 /*   By: andefern <andefern@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/23 13:38:40 by andefern          #+#    #+#             */
-/*   Updated: 2023/06/06 15:53:57 by andefern         ###   ########.fr       */
+/*   Updated: 2023/06/06 18:14:35 by andefern         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+/**
+ * @brief envía el número n al fd (file descriptor)
+ * 
+ * @param n el número
+ * @param fd el file desccriptor
+ */
 
 void	ft_putnbr_fd(int n, int fd)
 {
