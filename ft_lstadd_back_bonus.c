@@ -6,11 +6,17 @@
 /*   By: andefern <andefern@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/30 13:31:03 by andefern          #+#    #+#             */
-/*   Updated: 2023/06/06 15:53:01 by andefern         ###   ########.fr       */
+/*   Updated: 2023/06/07 15:41:01 by andefern         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+/**
+ * @brief añade el nodo new al final de la lista lst
+ * 
+ * @param lst la lista
+ * @param new el nodo
+ */
 
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {

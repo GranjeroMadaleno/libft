@@ -6,12 +6,21 @@
 /*   By: andefern <andefern@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/27 17:00:50 by andefern          #+#    #+#             */
-/*   Updated: 2023/06/06 15:53:29 by andefern         ###   ########.fr       */
+/*   Updated: 2023/06/07 15:54:22 by andefern         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <string.h>
+/**
+ * @brief Si se encuentra el byte c dentro del bloque de memoria, 
+ * la función devuelve un puntero al byte encontrado
+ * 
+ * @param s string recivido
+ * @param c valor a buscar
+ * @param n bytes
+ * @return void* 
+ */
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {

@@ -6,12 +6,20 @@
 /*   By: andefern <andefern@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/27 14:41:30 by andefern          #+#    #+#             */
-/*   Updated: 2023/06/06 15:55:01 by andefern         ###   ########.fr       */
+/*   Updated: 2023/06/07 16:13:14 by andefern         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <string.h>
+/**
+ * @brief compara hasta n caracteres
+ * 
+ * @param s1 primer string
+ * @param s2 segundo string
+ * @param n tamaño
+ * @return int 
+ */
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {

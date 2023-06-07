@@ -6,11 +6,18 @@
 /*   By: andefern <andefern@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/26 16:16:16 by andefern          #+#    #+#             */
-/*   Updated: 2023/06/06 15:55:08 by andefern         ###   ########.fr       */
+/*   Updated: 2023/06/07 16:17:50 by andefern         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+/**
+ * @brief como strchr pero localiza el último y no el primer valor
+ * 
+ * @param s string 
+ * @param c valor a localizar
+ * @return char* 
+ */
 
 char	*ft_strrchr(const char *s, int c)
 {

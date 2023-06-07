@@ -6,13 +6,19 @@
 /*   By: andefern <andefern@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/25 17:57:21 by andefern          #+#    #+#             */
-/*   Updated: 2023/06/06 15:55:27 by andefern         ###   ########.fr       */
+/*   Updated: 2023/06/07 16:19:35 by andefern         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdio.h>
 #include <string.h>
+/**
+ * @brief convierte las minúsculas a mayúsculas
+ * 
+ * @param c caracter
+ * @return int 
+ */
 
 int	ft_toupper(int c)
 {

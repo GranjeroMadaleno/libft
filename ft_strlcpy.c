@@ -6,7 +6,7 @@
 /*   By: andefern <andefern@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/19 11:45:50 by andefern          #+#    #+#             */
-/*   Updated: 2023/06/06 15:54:46 by andefern         ###   ########.fr       */
+/*   Updated: 2023/06/07 16:10:32 by andefern         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,14 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+/**
+ * @brief copia hasta dstsize - 1 caracteres de la cadena src a dst
+ * 
+ * @param dst primera cadena
+ * @param src segunda cadena
+ * @param dstsize límite para la copia
+ * @return size_t 
+ */
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {

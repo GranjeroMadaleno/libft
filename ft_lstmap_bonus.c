@@ -6,11 +6,20 @@
 /*   By: andefern <andefern@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/31 12:35:03 by andefern          #+#    #+#             */
-/*   Updated: 2023/06/06 15:53:17 by andefern         ###   ########.fr       */
+/*   Updated: 2023/06/07 15:50:34 by andefern         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+/**
+ * @brief 	Itera la lista lst y aplica la función f al
+	contenido de cada nodo
+ * 
+ * @param lst la lista a iterar
+ * @param f función que se aplica a cada nodo
+ * @param del elimina el contenido de los nodos
+ * @return t_list* head es la lista resultante
+ */
 
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *),	void (*del)(void *))
 {

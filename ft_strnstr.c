@@ -6,12 +6,21 @@
 /*   By: andefern <andefern@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/08 16:29:14 by andefern          #+#    #+#             */
-/*   Updated: 2023/06/06 15:55:05 by andefern         ###   ########.fr       */
+/*   Updated: 2023/06/07 16:16:21 by andefern         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <string.h>
+/**
+ * @brief  localiza la primera aparición del needle de cadena 
+ * terminada en nulo en el haystack de cadenas
+ * 
+ * @param haystack pajar
+ * @param needle aguja a buscar en el pajar
+ * @param len tamaño
+ * @return char* 
+ */
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {

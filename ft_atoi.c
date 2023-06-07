@@ -6,14 +6,19 @@
 /*   By: andefern <andefern@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/09 15:50:06 by andefern          #+#    #+#             */
-/*   Updated: 2023/06/07 13:05:47 by andefern         ###   ########.fr       */
+/*   Updated: 2023/06/07 15:27:40 by andefern         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdio.h>
 #include <stdlib.h>
-
+/**
+ * @brief convierte caracteres a enteros
+ * 
+ * @param str string de caracteres
+ * @return int enteros
+ */
 int	ft_atoi(const char *str)
 {
 	int	i;

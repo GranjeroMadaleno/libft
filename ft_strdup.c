@@ -6,12 +6,19 @@
 /*   By: andefern <andefern@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/10 15:09:28 by andefern          #+#    #+#             */
-/*   Updated: 2023/06/06 15:54:11 by andefern         ###   ########.fr       */
+/*   Updated: 2023/06/07 16:04:33 by andefern         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
+/**
+ * @brief ubica suficiente memoria para una copia de la cadena s1,
+ *  hace la copia y le devuelve un puntero
+ * 
+ * @param s1 string principal
+ * @return char* la copia
+ */
 
 char	*ft_strdup(const char *s1)
 {
